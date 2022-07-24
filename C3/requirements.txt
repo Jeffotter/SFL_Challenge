@@ -1,0 +1,30 @@
+Jinja2==3.1.0
+botocore
+boto3
+
+
+# Base ----------------------------------------
+torch
+torchvision
+typing-extensions==3.10.0.2
+urllib3==1.26.7
+fastapi==0.70.0
+matplotlib>=3.2.2
+numpy>=1.18.5
+opencv-python>=4.1.1
+Pillow>=7.1.2
+fastapi==0.70.0
+PyYAML>=5.3.1
+requests>=2.23.0
+scipy>=1.5
+torch>=1.7.0
+tqdm
+scikit_learn
+uvicorn
+python-multipart
+# Logging -------------------------------------
+tensorboard>=2.4.1
+
+# Plotting ------------------------------------
+pandas>=1.1.4
+seaborn>=0.11.0

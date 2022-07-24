@@ -1,0 +1,5 @@
+Two lines to run for this file 
+
+docker build -t mnist .  
+
+docker run -d --name mycontainer -p 80:80 mnist
