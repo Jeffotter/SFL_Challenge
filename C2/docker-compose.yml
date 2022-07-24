@@ -1,0 +1,31 @@
+# Use postgres/example user/password credentials
+version: '3.8'
+
+services:
+  pythonapp:
+    build: ./
+    depends_on:
+      - database
+    command: sh -c "sleep 3s ; python3 ./ETL.py"
+      
+  database:
+    image: postgres
+    ports:
+      - 5432:5432
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: exampledb
+    volumes:
+      - ./data:/var/lib/postgresql/data
+  adminer:
+    image: adminer
+    restart: always 
+    depends_on:
+      - database
+    ports:
+      - 8080:8080
+  
+    
+    
