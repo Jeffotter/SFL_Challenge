@@ -3,3 +3,6 @@ Two lines to run for this file
 docker build -t mnist .  
 
 docker run -d --name mycontainer -p 80:80 mnist
+
+
+Go to the outputted address on your local machine and type in /docs after you should be able to use the api and upload any image on your computer to classify clothes 
